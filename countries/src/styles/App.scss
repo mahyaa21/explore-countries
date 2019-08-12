@@ -1,0 +1,171 @@
+body{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center; 
+  width: 100%;
+  margin: auto;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
+.App-logo {
+ /*  height: 40vmin;
+  pointer-events: none; */
+  
+  width: 300px;
+  height: 300px;
+  
+}
+
+
+
+input{
+  border-radius:20px  0px 0px 20px;
+  background-color: aliceblue;
+ border: solid 0.5px rgba(146, 146, 146, 0.699);
+ outline: none; 
+ padding: 5px;
+ height: 40px;
+ width: 400px;
+
+}
+ .button {
+  background-color: rgb(25, 159, 236);
+  color: aliceblue;
+  border-radius:0px  20px 20px 0px;
+  border: none;
+  padding: 7px; 
+  height: 52px;
+  width: 50px;
+}
+
+.App-input{
+  position: relative;
+  width: 600px;
+  height: 100px;
+}
+
+.suggest{
+  display: flex;
+  justify-self: flex-start;
+  flex-direction: column; 
+  z-index: -1;
+  position: absolute;
+  width: 61%;
+  list-style-type: none;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+  top:23px;
+  left: 70px;
+  border: 1px solid gray;
+  box-shadow: 0 3px 6px #aaaa;
+  overflow: hidden;
+}
+
+.suggest-item{
+  display:flex;
+  align-items: center;
+  padding: 10px;
+
+}
+.suggest-item :hover{
+  background-color: darkgray;
+}
+.suggest-item > img{
+  width:50px;
+  height:30px;
+  border-radius: 20px;
+  padding: 10px; 
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  align-items: center;
+  width: 100vw;
+  height: 64px;
+  box-shadow: 0 3px 6px gray;
+  >img{
+    height: 40px;
+  }
+  button{
+    background:transparent;
+    border:none;
+    padding: 0;
+    outline:none;
+    width: 40px;
+    height: 40px;
+    &focus{
+      border-radius: 50%;
+      border: 1px solid gray;
+    }
+  }
+}
+
+.flag{
+  width: 100%;
+  
+}
+main{
+  display:flex;
+  justify-content: space-around;
+}
+.item{
+  box-shadow: 0 3px 6px gray;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.item:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+.title{
+  color: #00B8D4;
+}
+ul{
+  padding: 0px;
+}
+li{
+  list-style-type: none;
+  padding: 5px;
+}
+.row{
+  margin: auto;
+}
+
+.callingCode :nth-child(1){
+  background-color:black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.callingCode :nth-child(2){
+  background-color:#00838F;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  height: 85%;
+  font-size: 100px;
+}
+
+#root{
+  display: initial;
+}
